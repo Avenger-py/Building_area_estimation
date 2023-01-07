@@ -14,7 +14,7 @@
     const img = json['data'][0]
     const area = json['data'][1]
     results.innerHTML = `<h2>Input image</h2> <br/><img src="${reader.result}" width="300"> 
-    </br> <h3>Output Image</h3> </br> <img src=img> </br> <h4>Area Ratio: </h4> <p>${img}</p>`
+    </br> <h3>Output Image</h3> </br> <img src=img> </br> <h4>Area Ratio: </h4> <p>${area}</p>`
   }
   function read() {
     const reader = new FileReader();
