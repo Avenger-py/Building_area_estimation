@@ -1,4 +1,4 @@
-<h1>Building Area Estimation</h1>
+<h1>Building Area Estimation :))</h1>
 
 <input id="photo" type="file">
 <div id="results"></div>
@@ -13,7 +13,7 @@
     const json = await response.json();
     const img = json['data'][0]
     const area = json['data'][1]
-    results.innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${area}</p>`
+    results.innerHTML = `<h2>Input image</h2> <br/><img src="${reader.result}" width="300"> <p>${area}</p>`
   }
   function read() {
     const reader = new FileReader();
