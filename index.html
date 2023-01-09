@@ -13,8 +13,8 @@
     const json = await response.json();
     const img = json['data'][0]
     const area = json['data'][1]
-    results.innerHTML = `<h2>Input image</h2> <br/><img src="${reader.result}"> 
-    </br> <h3>Output Image</h3> </br> <img src=${img}> </br> <h4>Area (1 pixel = 0.25 square meters):</h4><p>${area}</p>`
+    results.innerHTML = `<h3>Input image</h3> <br/><img src="${reader.result}"> 
+    </br> <h3>Output Image</h3> </br> <img src=${img}> </br> <h3>Area (1 pixel = 0.25 square meters):</h3><p>${area}</p>`
   }
   function read() {
     const reader = new FileReader();
